@@ -14,6 +14,9 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "axios": "^0.25.0",
+    "dotenv": "^10.0.0",
+    "dotenv-expand": "^5.1.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.3",
     "prettier": "^2.5.1",
@@ -26,6 +29,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -56,5 +61,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandr90h/english-learn.git"
   }
 }
